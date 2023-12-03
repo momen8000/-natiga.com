@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>natiga.com</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url(office-instruments-black-table.jpg) center center fixed; /* استبدل برابط الصورة الخاص بك */
+      background-size: cover;
+    }
+
+    #top-nav {
+      background: #000000;
+      color: rgb(204, 169, 11);
+      text-align: center;
+      padding: 1px 0;
+    }
+
+    #top-nav a {
+      text-decoration: none;
+      color: rgb(218, 197, 10);
+      margin: 0 140px;
+    }
+
+    #sidebar {
+      height: 100vh;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background: #000000; /* لون الخلفية للقائمة الجانبية */
+      transition: 0.3s;
+      padding-top: 20px;
+      color: rgb(228, 177, 11);
+    }
+
+    #sidebar a {
+      padding: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #e99920;
+      display: block;
+      transition: 0.2s;
+    }
+
+    #sidebar a:hover {
+      color: rgb(111, 218, 10);
+    }
+
+    #toggle-btn {
+      position: fixed;
+      left: 10px;
+      top: 10px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    #content {
+      margin-left: 250px;
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- قائمة علوية -->
+  <div id="top-nav">
+<h2>natiga.com</h2>
+    <a href="حولي 1.html">حولي</a>
+    <a href="index.html">الصفحة الرئيسية</a>
+    <a href="https://moe.gov.eg//ar/what-s-on/news/">اخر لاخبار</a>
+  </div>
+
+  <!-- قائمة جانبية -->
+  <div id="sidebar">
+    <a href="index.html">الصفحة الرئيسية</a>
+    <a href="حولي 1.html">حولنا</a>
+    <a href="النتائج.html">خدماتنا</a>
+    <a href=" https://api.whatsapp.com/send?phone=201110456041">اتصل بنا</a>
+
+    <!-- روابط إضافية -->
+    <h3>اشياء قد تهمك </h3>
+    <ul>
+      <li><a href=" https://stream.moe.gov.eg/"> منصة البث المباشر </a></li>
+
+      <li><a href=" https://moe.gov.eg/ar/elearningenterypage/e-learning/?schoolStageId=1931&schoolYearId=1936&contentTypeId=7597&pageIndex=0&sortBy=0">تحميل الكتب المدرسية الصف لاؤل الثانوي</a></li>
+
+      <li><a href="    https://moe.gov.eg/ar/elearningenterypage/e-learning/?schoolStageId=1931&schoolYearId=1937&contentTypeId=7597&pageIndex=0&sortBy=0  "> تحميل الكتب المدرسية الصف الثاني الثانوي </a></li>
+
+      <li><a href="   https://moe.gov.eg/ar/elearningenterypage/e-learning/?schoolStageId=1931&schoolYearId=1938&contentTypeId=7597&pageIndex=0&sortBy=0">   تحميل الكتب لمدرسية لصف الثالث الثانوي  </a></li>
+
+      <li><a href=" https://moe.gov.eg/ar/elearningenterypage/e-learning/?schoolStageId=1582&schoolYearId=1935&contentTypeId=7597&pageIndex=0&sortBy=0">    تحميل الكتب المدرسية للصف السادس لابتدائي</a></li>
+
+      <li><a href="  https://moe.gov.eg/ar/elearningenterypage/e-learning/?schoolStageId=1930&schoolYearId=4789&contentTypeId=7597&pageIndex=0&sortBy=0"> تحميل الكتب المدرسية للصف الثالث لاعدادي </a></li>
+
+      <li><a href=" https://moe.gov.eg/%D8%8C"> قريبا منصة تنسيق الصف لاؤل الثانوي</a></li>
+
+      <li><a href="النتائج.html">  نتائج الشهاده لاعدادية لجميع المحافظات  2024</a></li>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ul>
+  </div>
+
+  <!-- الرئيسية -->
+  <div id="content">
+
+    <style>
+      #toggle-btn {
+          color: rgb(228, 177, 11); /* يتم تغيير لون النص إلى اللون الأصفر هنا */
+          cursor: pointer;
+      }
+  </style>
+  <div id="toggle-btn">&#9776; فتح القائمة</div>
+    <h2>مرحبًا بك في موقعنا!</h2>
+   <h3>welcome to natiga.com  </h3>
+  </div>
+
+  <script>
+    document.getElementById('toggle-btn').addEventListener('click', function () {
+      var sidebar = document.getElementById('sidebar');
+      if (sidebar.style.left === '0px') {
+        sidebar.style.left = '-250px';
+      } else {
+        sidebar.style.left = '0px';
+      }
+    });
+  </script>
+
+</body>
+</html>
